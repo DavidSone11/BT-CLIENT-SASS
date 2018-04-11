@@ -1,0 +1,26 @@
+<div class="login-main-container">
+    <div class="login-login-box">
+        <img src="../../../images/avatar.png" alt="no image found" class="avatar">
+        <h1 class="mainheader">Please Login Here</h1>
+        <form role="form" name="loginForm" novalidate ng-submit="login(username,password)">
+
+            <div class="txtbox">
+                <i class="fa fa-user"></i>
+                <input type="text" name="username" value="" ng-model="username" placeholder="Username" required>
+                <span ng-show="loginForm.username.$touched && loginForm.username.$invalid">Username is required.</span>
+            </div>
+            <div class="txtbox">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" value="" ng-model="password" placeholder="Password" required>
+                <span ng-show="loginForm.password.$touched && loginForm.password.$invalid">Password is required.</span>
+            </div>
+
+            <div class="btnbox">
+                <button type="submit" value="Sign In" ng-disabled="loginForm.$invalid || loginForm.$pending">
+                    Login
+                    <i ng-class="loginForm.$invalid || loginForm.$pending ? 'fa fa-ban': 'fa fa-sign-in'" aria-hidden="true"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

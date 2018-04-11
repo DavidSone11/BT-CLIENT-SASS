@@ -1,0 +1,32 @@
+{
+  "name": "BT-CLIENT-SASS",
+  "main": "main.index.js",
+  "authors": [
+    "santosh"
+  ],
+  "description": "THIS IS CLIENT SIDE PROJECT",
+  "keywords": [
+    "CSS",
+    "SCSS",
+    "LESS",
+    "HTML5",
+    "FONT",
+    "AWESOME",
+    "HTML5"
+  ],
+  "license": "MIT",
+  "homepage": "www.bt.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.6.9",
+    "oclazyload": "^1.1.0",
+    "angular-ui-router": "^1.0.15"
+  }
+}
